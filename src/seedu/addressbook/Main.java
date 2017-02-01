@@ -48,7 +48,7 @@ public class Main {
      * @param launchArgs arguments supplied by the user at program launch
      *
      */
-    private void start(String[] launchArgs) {
+    private void start(String[] launchArgs) throws StorageNotFoundException {
         try {
             this.ui = new TextUi();
             this.storage = initializeStorage(launchArgs);
